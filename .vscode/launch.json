@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome: server",
+            "url": "http://localhost:8000/${relativeFile}",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome: file",
+            "url": "file://${file}",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
