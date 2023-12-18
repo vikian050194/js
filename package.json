@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node static.js"
+    "start": "node static.js",
+    "lint": "eslint . --config=.eslintrc --ext=js"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "7.22.15",
+    "eslint": "8.49.0",
+    "eslint-plugin-import": "2.28.1"
   }
 }

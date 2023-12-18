@@ -14,7 +14,7 @@ window.addEventListener("load", () => {
                     accept: {
                         "application/json": ".json"
                     }
-                },
+                }
             ],
             excludeAcceptAllOption: false
         });
@@ -28,7 +28,7 @@ window.addEventListener("load", () => {
 
         const fileHandle = await window.showSaveFilePicker({
             id: "json-data",
-            suggestedName: "file.json",
+            suggestedName: `file-${new Date().toISOString().slice(0,10)}.json`,
             startIn: "documents",
             types: [
                 {
@@ -36,7 +36,7 @@ window.addEventListener("load", () => {
                     accept: {
                         "application/json": ".json"
                     }
-                },
+                }
             ],
             excludeAcceptAllOption: false
         });
